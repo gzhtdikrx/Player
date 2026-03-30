@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hdhdhdh</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0a;
+    color: #f0f0f0;
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+  }
+  .player {
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    padding: 40px 36px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+  .label {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #e8ff47;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+  .sub {
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+  .bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    height: 40px;
+    margin-bottom: 28px;
+  }
+  .bar {
+    width: 4px;
+    background: #e8ff47;
+    border-radius: 2px;
+    animation: bounce 1.2s ease-in-out infinite;
+    opacity: 0.3;
+  }
+  .bar:nth-child(1) { height: 20px; animation-delay: 0s; }
+  .bar:nth-child(2) { height: 35px; animation-delay: 0.1s; }
+  .bar:nth-child(3) { height: 28px; animation-delay: 0.2s; }
+  .bar:nth-child(4) { height: 40px; animation-delay: 0.3s; }
+  .bar:nth-child(5) { height: 22px; animation-delay: 0.4s; }
+  .bar:nth-child(6) { height: 32px; animation-delay: 0.2s; }
+  .bar:nth-child(7) { height: 18px; animation-delay: 0.1s; }
+  @keyframes bounce {
+    0%, 100% { transform: scaleY(0.4); opacity: 0.3; }
+    50% { transform: scaleY(1); opacity: 1; }
+  }
+  audio {
+    width: 100%;
+    filter: invert(1) hue-rotate(180deg);
+  }
+  .footer {
+    margin-top: 24px;
+    font-size: 10px;
+    color: #333;
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+<div class="player">
+  <div class="label">▶ Now Playing</div>
+  <h1>Hdhdhdh</h1>
+  <div class="sub">Udhdhd</div>
+  <div class="bars">
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <audio controls autoplay>
+    <source src="https://drive.google.com/file/d/17UxqeOqQ1-gXVEi1Pk_e__Nu70MHRw79/view?usp=drivesdk" type="audio/mpeg">
+    Dein Browser unterstützt kein Audio.
+  </audio>
+  <div class="footer">// audio player</div>
+</div>
+</body>
+</html>
